@@ -1,0 +1,372 @@
+[
+  {
+    "id": "1",
+    "title": "Cyberpunk 2077",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1091500/library_600x900.jpg",
+    "category": "Sci-Fi RPG",
+    "downloadLink": "https://www.cyberpunk.net/gb/en/",
+    "description": "An open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification.",
+    "ratings": "4.1",
+    "developer": "CD Projekt Red"
+  },
+  {
+    "id": "2",
+    "title": "The Witcher 3: Wild Hunt",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/292030/library_600x900.jpg",
+    "category": "Fantasy RPG",
+    "downloadLink": "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/",
+    "description": "A story-driven, open-world RPG set in a visually stunning fantasy universe full of meaningful choices and impactful consequences.",
+    "ratings": "4.9",
+    "developer": "CD Projekt Red"
+  },
+  {
+    "id": "3",
+    "title": "Elden Ring",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/library_600x900.jpg",
+    "category": "Action RPG",
+    "downloadLink": "https://store.steampowered.com/app/1245620/ELDEN_RING/",
+    "description": "A vast world where open fields with a variety of situations and huge dungeons with complex and three-dimensional designs are seamlessly connected.",
+    "ratings": "4.8",
+    "developer": "FromSoftware"
+  },
+  {
+    "id": "4",
+    "title": "Red Dead Redemption 2",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/library_600x900.jpg",
+    "category": "Action-Adventure",
+    "downloadLink": "https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/",
+    "description": "America, 1899. Arthur Morgan and the Van der Linde gang are outlaws on the run. A story of honor and loyalty in the dying Wild West.",
+    "ratings": "4.9",
+    "developer": "Rockstar Games"
+  },
+  {
+    "id": "5",
+    "title": "Grand Theft Auto V",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/271590/library_600x900.jpg",
+    "category": "Action-Adventure",
+    "downloadLink": "https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/",
+    "description": "A young street hustler, a retired bank robber and a terrifying psychopath find themselves entangled with the criminal underworld.",
+    "ratings": "4.4",
+    "developer": "Rockstar North"
+  },
+  {
+    "id": "6",
+    "title": "Baldur's Gate 3",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1086940/library_600x900.jpg",
+    "category": "RPG",
+    "downloadLink": "https://store.steampowered.com/app/1086940/Baldurs_Gate_3/",
+    "description": "Gather your party and return to the Forgotten Realms in a tale of fellowship and betrayal, sacrifice and survival, and the lure of absolute power.",
+    "ratings": "5.0",
+    "developer": "Larian Studios"
+  },
+  {
+    "id": "7",
+    "title": "Hades",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/library_600x900.jpg",
+    "category": "Indie",
+    "downloadLink": "https://store.steampowered.com/app/1145360/Hades/",
+    "description": "Defy the god of the dead as you hack and slash your way out of the Underworld in this rogue-like dungeon crawler.",
+    "ratings": "4.9",
+    "developer": "Supergiant Games"
+  },
+  {
+    "id": "8",
+    "title": "Stardew Valley",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/413150/library_600x900.jpg",
+    "category": "Simulation",
+    "downloadLink": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+    "description": "You've inherited your grandfather's old farm plot. Armed with hand-me-down tools, you set out to begin your new life.",
+    "ratings": "5.0",
+    "developer": "ConcernedApe"
+  },
+  {
+    "id": "9",
+    "title": "Hogwarts Legacy",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/990080/library_600x900.jpg",
+    "category": "Action RPG",
+    "downloadLink": "https://store.steampowered.com/app/990080/Hogwarts_Legacy/",
+    "description": "Experience an unwritten world. Live the unwritten in an open-world action RPG set in the 1800s wizarding world.",
+    "ratings": "4.4",
+    "developer": "Avalanche Software"
+  },
+  {
+    "id": "10",
+    "title": "Terraria",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/105600/library_600x900.jpg",
+    "category": "Sandbox",
+    "downloadLink": "https://store.steampowered.com/app/105600/Terraria/",
+    "description": "Dig, fight, explore, build! Nothing is impossible in this action-packed adventure game. The world is your canvas.",
+    "ratings": "4.9",
+    "developer": "Re-Logic"
+  },
+  {
+    "id": "11",
+    "title": "Portal 2",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/620/library_600x900.jpg",
+    "category": "Puzzle",
+    "downloadLink": "https://store.steampowered.com/app/620/Portal_2/",
+    "description": "A mind-bending puzzle-platformer. The sequel adds co-op, new mechanics, and a deeper story.",
+    "ratings": "5.0",
+    "developer": "Valve"
+  },
+  {
+    "id": "12",
+    "title": "Half-Life: Alyx",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/546560/library_600x900.jpg",
+    "category": "VR",
+    "downloadLink": "https://store.steampowered.com/app/546560/HalfLife_Alyx/",
+    "description": "Valve’s VR return to the Half-Life series. The story of an impossible fight against a vicious alien race known as the Combine.",
+    "ratings": "4.9",
+    "developer": "Valve"
+  },
+  {
+    "id": "13",
+    "title": "God of War",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1593500/library_600x900.jpg",
+    "category": "Action-Adventure",
+    "downloadLink": "https://store.steampowered.com/app/1593500/God_of_War/",
+    "description": "His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters.",
+    "ratings": "4.8",
+    "developer": "Santa Monica Studio"
+  },
+  {
+    "id": "14",
+    "title": "Marvel's Spider-Man",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1817070/library_600x900.jpg",
+    "category": "Action-Adventure",
+    "downloadLink": "https://store.steampowered.com/app/1817070/Marvels_SpiderMan_Remastered/",
+    "description": "The worlds of Peter Parker and Spider-Man collide in an original action-packed story. Play as an experienced Peter Parker.",
+    "ratings": "4.7",
+    "developer": "Insomniac Games"
+  },
+  {
+    "id": "15",
+    "title": "Horizon Zero Dawn",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/library_600x900.jpg",
+    "category": "Action RPG",
+    "downloadLink": "https://store.steampowered.com/app/1151640/Horizon_Zero_Dawn_Complete_Edition/",
+    "description": "Experience Aloy’s legendary quest to unravel the mysteries of a future Earth ruled by Machines. A lush, post-apocalyptic open world.",
+    "ratings": "4.5",
+    "developer": "Guerrilla Games"
+  },
+  {
+    "id": "16",
+    "title": "DOOM Eternal",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/782330/library_600x900.jpg",
+    "category": "FPS",
+    "downloadLink": "https://store.steampowered.com/app/782330/DOOM_Eternal/",
+    "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions.",
+    "ratings": "4.7",
+    "developer": "id Software"
+  },
+  {
+    "id": "17",
+    "title": "Call of Duty: Modern Warfare II",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1938090/library_600x900.jpg",
+    "category": "FPS",
+    "downloadLink": "https://store.steampowered.com/app/1938090/Call_of_Duty_Modern_Warfare_II/",
+    "description": "Task Force 141 returns with a global campaign, immersive multiplayer, and narrative-driven Special Ops.",
+    "ratings": "3.5",
+    "developer": "Infinity Ward"
+  },
+  {
+    "id": "18",
+    "title": "Apex Legends",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1172470/library_600x900.jpg",
+    "category": "FPS",
+    "downloadLink": "https://store.steampowered.com/app/1172470/Apex_Legends/",
+    "description": "A free-to-play hero shooter where legendary characters with powerful abilities team up to battle for fame & fortune.",
+    "ratings": "4.2",
+    "developer": "Respawn Entertainment"
+  },
+  {
+    "id": "19",
+    "title": "Lethal Company",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1966720/library_600x900.jpg",
+    "category": "Indie",
+    "downloadLink": "https://store.steampowered.com/app/1966720/Lethal_Company/",
+    "description": "A co-op horror game about scavenging abandoned moons. Work with your crew to gather scrap for the Company.",
+    "ratings": "4.9",
+    "developer": "Zeekerss"
+  },
+  {
+    "id": "20",
+    "title": "Counter-Strike 2",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/730/library_600x900.jpg",
+    "category": "FPS",
+    "downloadLink": "https://store.steampowered.com/app/730/CounterStrike_2/",
+    "description": "For over two decades, Counter-Strike has offered an elite competitive experience. This is the next chapter.",
+    "ratings": "4.6",
+    "developer": "Valve"
+  },
+  {
+    "id": "21",
+    "title": "Phasmophobia",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/739630/library_600x900.jpg",
+    "category": "Horror",
+    "downloadLink": "https://store.steampowered.com/app/739630/Phasmophobia/",
+    "description": "A 4-player, online co-op psychological horror where you and your team of paranormal investigators enter haunted locations.",
+    "ratings": "4.8",
+    "developer": "Kinetic Games"
+  },
+  {
+    "id": "22",
+    "title": "Dota 2",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/570/library_600x900.jpg",
+    "category": "MOBA",
+    "downloadLink": "https://store.steampowered.com/app/570/Dota_2/",
+    "description": "Every day, millions of players worldwide enter battle as one of over a hundred Dota Heroes in this free-to-play MOBA.",
+    "ratings": "4.5",
+    "developer": "Valve"
+  },
+  {
+    "id": "23",
+    "title": "Genshin Impact",
+    "coverPhoto": "https://image.api.playstation.com/vulcan/ap/rnd/202508/2602/30935168a0f21b6710dc2bd7bb37c23ed937fb9fa747d84c.png",
+    "category": "Action RPG",
+    "downloadLink": "https://genshin.hoyoverse.com/en/",
+    "description": "Step into Teyvat, a vast world teeming with life and flowing with elemental energy. An open-world action RPG.",
+    "ratings": "4.4",
+    "developer": "HoYoverse"
+  },
+  {
+    "id": "24",
+    "title": "Honkai: Star Rail",
+    "coverPhoto": "https://image.api.playstation.com/vulcan/ap/rnd/202308/1103/8c3ce3611a4bb187418bb5e24924a055ba33d3046a7aaacb.png",
+    "category": "RPG",
+    "downloadLink": "https://hsr.hoyoverse.com/en-us/",
+    "description": "A new HoYoverse space fantasy RPG. Embark on an epic adventure among the stars with the Astral Express.",
+    "ratings": "4.6",
+    "developer": "HoYoverse"
+  },
+  {
+    "id": "25",
+    "title": "Palworld",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1623730/library_600x900.jpg",
+    "category": "Survival",
+    "downloadLink": "https://store.steampowered.com/app/1623730/Palworld/",
+    "description": "An open-world survival craft game about mysterious creatures called 'Pal'. Fight, farm, build, and work with Pals.",
+    "ratings": "4.6",
+    "developer": "Pocket Pair"
+  },
+  {
+    "id": "26",
+    "title": "Helldivers 2",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/553850/library_600x900.jpg",
+    "category": "Shooter",
+    "downloadLink": "https://store.steampowered.com/app/553850/HELLDIVERS_2/",
+    "description": "Join the Helldivers and fight for freedom with friends in a hostile galaxy in this fast, frantic, and ferocious third-person shooter.",
+    "ratings": "4.3",
+    "developer": "Arrowhead Game Studios"
+  },
+  {
+    "id": "27",
+    "title": "Forza Horizon 5",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1551360/library_600x900.jpg",
+    "category": "Racing",
+    "downloadLink": "https://store.steampowered.com/app/1551360/Forza_Horizon_5/",
+    "description": "Your ultimate Horizon adventure awaits! Explore the vibrant open-world landscapes of Mexico with limitless, fun driving action.",
+    "ratings": "4.5",
+    "developer": "Playground Games"
+  },
+  {
+    "id": "28",
+    "title": "F1 23",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/2108330/library_600x900.jpg",
+    "category": "Racing",
+    "downloadLink": "https://store.steampowered.com/app/2108330/F1_23/",
+    "description": "Be the last to brake in EA SPORTS F1 23, the official videogame of the 2023 FIA Formula One World Championship.",
+    "ratings": "4.1",
+    "developer": "Codemasters"
+  },
+  {
+    "id": "29",
+    "title": "Microsoft Flight Simulator",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1250410/library_600x900.jpg",
+    "category": "Simulation",
+    "downloadLink": "https:/store.steampowered.com/app/1250410/Microsoft_Flight_Simulator_40th_Anniversary_Edition/",
+    "description": "From light planes to wide-body jets, fly highly detailed and accurate aircraft in the next generation of flight simulator.",
+    "ratings": "4.3",
+    "developer": "Asobo Studio"
+  },
+  {
+    "id": "30",
+    "title": "The Sims 4",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1222670/library_600x900.jpg",
+    "category": "Simulation",
+    "downloadLink": "https://store.steampowered.com/app/1222670/The_Sims_4/",
+    "description": "Unleash your imagination and create a unique world of Sims that’s an expression of you. Now free to play.",
+    "ratings": "4.5",
+    "developer": "Maxis"
+  },
+  {
+    "id": "31",
+    "title": "Cities: Skylines II",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/949230/library_600x900.jpg",
+    "category": "Simulation",
+    "downloadLink": "https://store.steampowered.com/app/949230/Cities_Skylines_II/",
+    "description": "Raise a city from the ground up and transform it into the thriving metropolis only you can imagine. A new scale of city builder.",
+    "ratings": "2.8",
+    "developer": "Colossal Order"
+  },
+  {
+    "id": "32",
+    "title": "Civilization VI",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/289070/library_600x900.jpg",
+    "category": "Strategy",
+    "downloadLink": "https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/",
+    "description": "A turn-based strategy game in which you attempt to build an empire to stand the test of time. Become Ruler of the World.",
+    "ratings": "4.4",
+    "developer": "Firaxis Games"
+  },
+  {
+    "id": "33",
+    "title": "Age of Empires IV",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1466860/library_600x900.jpg",
+    "category": "Strategy",
+    "downloadLink": "https://store.steampowered.com/app/1466860/Age_of_Empires_IV_Anniversary_Edition/",
+    "description": "One of the most beloved real-time strategy games returns to glory, putting you at the center of epic historical battles.",
+    "ratings": "4.2",
+    "developer": "Relic Entertainment"
+  },
+  {
+    "id": "34",
+    "title": "Deep Rock Galactic",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/548430/library_600x900.jpg",
+    "category": "FPS",
+    "downloadLink": "https://store.steampowered.com/app/548430/Deep_Rock_Galactic/",
+    "description": "A 1-4 player co-op FPS featuring badass space Dwarves, 100% destructible environments, and procedurally-generated caves.",
+    "ratings": "4.9",
+    "developer": "Ghost Ship Games"
+  },
+  {
+    "id": "35",
+    "title": "Subnautica",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/264710/library_600x900.jpg",
+    "category": "Survival",
+    "downloadLink": "https://store.steampowered.com/app/264710/Subnautica/",
+    "description": "Descend into the depths of an alien underwater world filled with wonder and peril. Craft, pilot submarines, and out-smart wildlife.",
+    "ratings": "4.9",
+    "developer": "Unknown Worlds"
+  },
+  {
+    "id": "36",
+    "title": "Outer Wilds",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/753640/library_600x900.jpg",
+    "category": "Indie",
+    "downloadLink": "https://store.steampowered.com/app/753640/Outer_Wilds/",
+    "description": "An open-world mystery about a solar system trapped in an endless time loop. The indie game of a generation.",
+    "ratings": "4.9",
+    "developer": "Mobius Digital"
+  },
+  {
+    "id": "37",
+    "title": "Sea of Thieves",
+    "coverPhoto": "https://cdn.akamai.steamstatic.com/steam/apps/1172620/library_600x900.jpg",
+    "category": "Action-Adventure",
+    "downloadLink": "https://store.steampowered.com/app/1172620/Sea_of_Thieves_2024_Edition/",
+    "description": "The essential pirate experience. Sail, fight, explore, and loot in a shared-world adventure. Live the pirate life.",
+    "ratings": "4.5",
+    "developer": "Rare Ltd"
+  }
+]
