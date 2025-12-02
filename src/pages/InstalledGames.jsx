@@ -52,7 +52,7 @@ const InstalledGames = () => {
                 <div className="card-actions justify-end mt-4">
                   <button
                     onClick={() => uninstallGame(game)}
-                    className="btn btn-sm bg-red-600 hover:bg-red-700 text-white">
+                    className="btn btn-sm border-0 bg-red-600 hover:bg-red-700 text-white">
                     Uninstall
                   </button>
                 </div>

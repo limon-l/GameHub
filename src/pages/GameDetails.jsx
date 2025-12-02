@@ -76,7 +76,7 @@ const GameDetails = () => {
             <button
               onClick={() => installGame(game)}
               disabled={isInstalled}
-              className="btn bg-green-700 hover:bg-green-800 text-white text-lg px-8 disabled:bg-gray-400">
+              className="btn bg-green-700 hover:bg-green-800 text-white text-lg px-8 disabled:bg-gray-400 border-0">
               {isInstalled ? "Installed" : "Install"}
             </button>
           </div>

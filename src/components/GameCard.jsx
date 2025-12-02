@@ -34,7 +34,7 @@ const GameCard = ({ game }) => {
           </p>
           <Link
             to={`/game/${id}`}
-            className="btn bg-green-700 hover:bg-green-800 text-white">
+            className="btn border-0 bg-green-700 hover:bg-green-800 text-white">
             View Details
           </Link>
         </div>

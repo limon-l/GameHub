@@ -3,6 +3,10 @@ import Banner from "../components/Banner";
 import Container from "../components/Container";
 import GameCard from "../components/GameCard";
 import Newsletter from "../components/Newsletter";
+import FeaturesSection from "../components/FeaturesSection";
+import TrendingGenres from "../components/TrendingGenres";
+import CommunitySpotlight from "../components/CommunitySpotlight";
+import AnimatedTitle from "../components/AnimatedTitle";
 import { Helmet } from "react-helmet-async";
 import MyLink from "../components/MyLink";
 import { motion } from "framer-motion";
@@ -27,18 +31,20 @@ const HomePage = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}>
+      transition={{ duration: 0.5 }}
+      className="overflow-x-hidden">
       <Helmet>
         <title>GameHub | Home</title>
       </Helmet>
 
       <Banner />
 
-      <section className="py-16 bg-gray-100">
+      <FeaturesSection />
+
+      <section className="py-20 bg-gray-100">
         <Container>
-          <h2 className="text-4xl font-extrabold text-center text-green-700 mb-12">
-            Popular Games
-          </h2>
+          <AnimatedTitle text="Popular Games" />
+
           {loading ? (
             <div className="text-center">
               <span className="loading loading-spinner loading-lg text-green-700"></span>
@@ -50,13 +56,17 @@ const HomePage = () => {
               ))}
             </div>
           )}
-          <MyLink className={"flex justify-center mt-8"} to={"/top-games"}>
-            <button className="btn bg-green-700 text-lg font-bold hover:bg-white hover:text-green-700 hover:border-2 hover:border-green-700">
-              Top Games
+          <MyLink className={"flex justify-center mt-12"} to={"/top-games"}>
+            <button className="btn border-0 bg-green-700 text-lg font-bold text-white hover:bg-white hover:text-green-700 hover:border-2 hover:border-green-700 transition-all">
+              View All Top Games
             </button>
           </MyLink>
         </Container>
       </section>
+
+      <TrendingGenres />
+
+      <CommunitySpotlight />
 
       <Newsletter />
     </motion.div>

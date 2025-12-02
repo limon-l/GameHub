@@ -97,7 +97,7 @@ const TopGames = () => {
           {query && (
             <button
               onClick={() => setQuery("")}
-              className="text-sm text-slate-600 hover:text-slate-800">
+              className="text-sm border-0 text-slate-600 hover:text-slate-800">
               Clear
             </button>
           )}
