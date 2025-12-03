@@ -5,7 +5,7 @@ import { Link } from "react-router";
 
 const CommunitySpotlight = () => {
   return (
-    <section className="py-24 bg-gradient-to-br from-green-50 to-white overflow-hidden">
+    <section className="py-24 bg-linear-to-br from-green-50 to-white overflow-hidden">
       <Container>
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <motion.div
