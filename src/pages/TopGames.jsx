@@ -3,6 +3,8 @@ import { useSearchParams } from "react-router";
 import { Helmet } from "react-helmet-async";
 import Container from "../components/Container";
 import GameCard from "../components/GameCard";
+import AnimatedTitle from "../components/AnimatedTitle";
+import { motion, AnimatePresence } from "framer-motion";
 
 const TopGames = () => {
   const [allGames, setAllGames] = useState([]);
@@ -36,7 +38,6 @@ const TopGames = () => {
   }, [query, setSearchParams]);
 
   useEffect(() => {
-    setLoading(true);
     const timeout = setTimeout(() => {
       const q = query.trim().toLowerCase();
       if (!q) {
@@ -49,77 +50,87 @@ const TopGames = () => {
         );
         setFilteredGames(filtered);
       }
-      setLoading(false);
-    }, 500);
+    }, 300);
 
     return () => clearTimeout(timeout);
   }, [query, allGames]);
 
   return (
-    <Container className="px-6 md:px-20 mb-20">
-      <Helmet>
-        <title>GameHub | Top Games</title>
-      </Helmet>
-      <h1 className="text-5xl font-bold text-center mb-4 mt-20 text-green-700">
-        Top Games
-      </h1>
-      <p className="text-center text-lg text-gray-600">
-        Explore top games on GameHub, sorted by their rating.
-      </p>
+    <div className="min-h-screen bg-gray-50 py-16">
+      <Container className="px-4 md:px-8">
+        <Helmet>
+          <title>GameHub | Top Games</title>
+        </Helmet>
 
-      <div className="my-4 flex flex-col-reverse md:flex-row justify-between items-center gap-4">
-        <p className="font-bold text-lg text-gray-800">
-          ({filteredGames.length}) Games Found
+        <AnimatedTitle text="Top Rated Games" />
+
+        <p className="text-center text-lg text-gray-600 max-w-2xl mx-auto mb-10">
+          Discover the highest-rated masterpieces curated by our community. From
+          open-world adventures to intense competitive shooters.
         </p>
 
-        <label className="input bg-gray-100 flex items-center gap-2 px-3 py-2 rounded-md w-full md:w-auto border-2 border-transparent focus-within:border-green-600">
-          <svg
-            className="h-5 w-5 opacity-60"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24">
-            <g
-              strokeLinejoin="round"
-              strokeLinecap="round"
-              strokeWidth="2.5"
-              fill="none"
-              stroke="currentColor">
-              <circle cx="11" cy="11" r="8"></circle>
-              <path d="m21 21-4.3-4.3"></path>
-            </g>
-          </svg>
-          <input
-            type="search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search games by name…"
-            className="bg-transparent outline-none flex-1"
-          />
-          {query && (
-            <button
-              onClick={() => setQuery("")}
-              className="text-sm border-0 text-slate-600 hover:text-slate-800">
-              Clear
-            </button>
-          )}
-        </label>
-      </div>
+        <div className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 mb-10 flex flex-col md:flex-row justify-between items-center gap-4 sticky top-20 z-30">
+          <p className="font-bold text-gray-700 bg-gray-100 px-4 py-2 rounded-lg">
+            {filteredGames.length}{" "}
+            <span className="font-normal text-gray-500">Titles Found</span>
+          </p>
 
-      {loading ? (
-        <div className="flex justify-center items-center min-h-[40vh]">
-          <span className="loading loading-spinner loading-lg text-green-700"></span>
+          <div className="relative w-full md:w-96">
+            <input
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search games..."
+              className="w-full pl-10 pr-4 py-3 bg-gray-50 border-transparent focus:bg-white border-2 focus:border-green-500 rounded-xl transition-all outline-none"
+            />
+            <svg
+              className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </div>
         </div>
-      ) : (
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {filteredGames.length > 0 ? (
-            filteredGames.map((game) => <GameCard key={game.id} game={game} />)
-          ) : (
-            <p className="text-slate-500 text-lg col-span-full text-center">
-              No games found{query ? ` for “${query}”` : ""}.
-            </p>
-          )}
-        </div>
-      )}
-    </Container>
+
+        {loading ? (
+          <div className="flex justify-center items-center min-h-[40vh]">
+            <span className="loading loading-spinner loading-lg text-green-700"></span>
+          </div>
+        ) : (
+          <motion.div
+            layout
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+            <AnimatePresence>
+              {filteredGames.length > 0 ? (
+                filteredGames.map((game) => (
+                  <GameCard key={game.id} game={game} />
+                ))
+              ) : (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="col-span-full py-20 text-center">
+                  <div className="text-6xl mb-4">🔍</div>
+                  <h3 className="text-2xl font-bold text-gray-700">
+                    No games found
+                  </h3>
+                  <p className="text-gray-500">
+                    Try adjusting your search terms.
+                  </p>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
+        )}
+      </Container>
+    </div>
   );
 };
 

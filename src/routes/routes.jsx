@@ -10,11 +10,13 @@ import ErrorPage from "../pages/ErrorPage";
 import GameDetails from "../pages/GameDetails";
 import PrivateRoute from "./PrivateRoute";
 import ForgetPassword from "../pages/ForgetPassword";
+import Reviews from "../pages/Reviews";
+import Community from "../pages/Community";
+import Support from "../pages/Support";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    Component: MainLayout,
     element: <MainLayout />,
     errorElement: <ErrorPage />,
     children: [
@@ -25,6 +27,22 @@ export const router = createBrowserRouter([
       {
         path: "/top-games",
         element: <TopGames />,
+      },
+      {
+        path: "/reviews",
+        element: <Reviews />,
+      },
+      {
+        path: "/community",
+        element: <Community />,
+      },
+      {
+        path: "/support",
+        element: <Support />,
+      },
+      {
+        path: "/game/:id",
+        element: <GameDetails />,
       },
       {
         path: "/installed-games",
@@ -45,14 +63,6 @@ export const router = createBrowserRouter([
       {
         path: "/profile",
         element: <Profile />,
-      },
-      {
-        path: "/game/:id",
-        element: (
-          <PrivateRoute>
-            <GameDetails />
-          </PrivateRoute>
-        ),
       },
     ],
   },
