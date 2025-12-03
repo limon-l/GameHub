@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Container from "../components/Container";
 import MyLink from "../components/MyLink";
 import { toast } from "react-toastify";
 import { auth } from "../firebase/firebase.config";
@@ -61,101 +60,130 @@ const Register = () => {
   };
 
   return (
-    <Container className="flex flex-col justify-center items-center min-h-screen py-10 px-4 md:px-8 lg:px-16">
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <Helmet>
-        <title>GameHub | Register</title>
+        <title>Register | GameHub</title>
       </Helmet>
-      <h1 className="font-extrabold text-3xl text-green-700 mb-2 text-center">
-        Register Here...
-      </h1>
-      <p className="mb-4 text-center text-gray-600">
-        Register & save your credentials securely.
-      </p>
 
-      <fieldset className="border-green-700 rounded-2xl border-2 p-6 md:p-8 w-full max-w-md bg-green-50 shadow-md">
-        <legend className="text-xl font-bold text-green-700 px-3">
-          Register
-        </legend>
+      <div className="max-w-md w-full space-y-8 bg-white p-10 rounded-xl shadow-lg border border-gray-100">
+        <div className="text-center">
+          <h2 className="mt-6 text-3xl font-extrabold text-gray-900">
+            Create an Account
+          </h2>
+          <p className="mt-2 text-sm text-gray-600">
+            Join GameHub to start your collection
+          </p>
+        </div>
 
-        <form onSubmit={handleRegister} className="text-lg space-y-4">
+        <form className="mt-8 space-y-6" onSubmit={handleRegister}>
+          <div className="rounded-md shadow-sm space-y-4">
+            <div>
+              <label htmlFor="name" className="sr-only">
+                Name
+              </label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                className="appearance-none rounded-lg relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm transition-all"
+                placeholder="Full Name"
+              />
+            </div>
+            <div>
+              <label htmlFor="photoURL" className="sr-only">
+                Photo URL
+              </label>
+              <input
+                id="photoURL"
+                name="photoURL"
+                type="text"
+                className="appearance-none rounded-lg relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm transition-all"
+                placeholder="Photo URL (Optional)"
+              />
+            </div>
+            <div>
+              <label htmlFor="email-address" className="sr-only">
+                Email address
+              </label>
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                autoComplete="email"
+                required
+                className="appearance-none rounded-lg relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm transition-all"
+                placeholder="Email address"
+              />
+            </div>
+            <div className="relative">
+              <label htmlFor="password" className="sr-only">
+                Password
+              </label>
+              <input
+                id="password"
+                name="password"
+                type={show ? "text" : "password"}
+                autoComplete="new-password"
+                required
+                className="appearance-none rounded-lg relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-green-500 focus:border-green-500 focus:z-10 sm:text-sm transition-all pr-10"
+                placeholder="Password"
+              />
+              <span
+                onClick={() => setShow(!show)}
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer text-gray-400 hover:text-gray-600">
+                {show ? <FaEyeSlash /> : <FaEye />}
+              </span>
+            </div>
+          </div>
+
           <div>
-            <label className="label text-green-800 font-semibold">Name</label>
-            <input
-              type="text"
-              name="name"
-              className="input w-full bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-600"
-              placeholder="Your Name"
-              required
-            />
+            <button
+              type="submit"
+              className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors shadow-md hover:shadow-lg">
+              Register
+            </button>
           </div>
-          <div>
-            <label className="label text-green-800 font-semibold">
-              Photo URL
-            </label>
-            <input
-              type="text"
-              name="photoURL"
-              className="input w-full bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-600"
-              placeholder="Your Photo's Link"
-            />
-          </div>
-          <div>
-            <label className="label text-green-800 font-semibold">Email</label>
-            <input
-              type="email"
-              name="email"
-              className="input w-full bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-600"
-              placeholder="Email"
-              required
-            />
-          </div>
-          <div className="relative">
-            <label className="label text-green-800 font-semibold">
-              Password
-            </label>
-            <input
-              type={show ? "text" : "password"}
-              name="password"
-              className="input w-full bg-green-100 pr-10 focus:outline-none focus:ring-2 focus:ring-green-600"
-              placeholder="Password"
-              required
-            />
-            <span
-              onClick={() => setShow(!show)}
-              className="absolute right-3 top-12 transform -translate-y-1/2 cursor-pointer text-green-700 text-xl z-50">
-              {show ? <FaEyeSlash /> : <FaEye />}
-            </span>
-          </div>
-          <button className="btn border-0 mt-4 bg-green-700 hover:bg-green-800 text-lg w-full text-white transition-all">
-            Register
-          </button>
         </form>
 
-        <div className="flex items-center justify-center gap-2 my-4">
-          <div className="h-px w-20 bg-black/30"></div>
-          <span className="text-lg text-black/70">or</span>
-          <div className="h-px w-20 bg-black/30"></div>
-        </div>
-        <button
-          type="button"
-          onClick={handleGoogleSignin}
-          className="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-800 text-white px-5 py-2 rounded-md w-full font-semibold transition-colors cursor-pointer">
-          <img
-            src="https://www.svgrepo.com/show/475656/google-color.svg"
-            alt="google"
-            className="w-6 h-6"
-          />
-          Continue with Google
-        </button>
+        <div className="mt-6">
+          <div className="relative">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-gray-300"></div>
+            </div>
+            <div className="relative flex justify-center text-sm">
+              <span className="px-2 bg-white text-gray-500">
+                Or continue with
+              </span>
+            </div>
+          </div>
 
-        <p className="text-base text-center mt-3 text-gray-700">
-          Already registered?{" "}
-          <MyLink className={"underline text-green-700"} to={"/signin"}>
-            Sign In Here
-          </MyLink>
-        </p>
-      </fieldset>
-    </Container>
+          <div className="mt-6">
+            <button
+              onClick={handleGoogleSignin}
+              className="w-full flex justify-center items-center gap-3 px-4 py-3 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-all">
+              <img
+                src="https://www.svgrepo.com/show/475656/google-color.svg"
+                alt="google"
+                className="w-5 h-5"
+              />
+              <span>Sign up with Google</span>
+            </button>
+          </div>
+        </div>
+
+        <div className="text-center mt-4">
+          <p className="text-sm text-gray-600">
+            Already have an account?{" "}
+            <MyLink
+              to="/signin"
+              className="font-medium text-green-600 hover:text-green-500">
+              Sign in
+            </MyLink>
+          </p>
+        </div>
+      </div>
+    </div>
   );
 };
 

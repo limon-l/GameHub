@@ -13,8 +13,8 @@ import {
 import { toast } from "react-toastify";
 import { Helmet } from "react-helmet-async";
 import { motion, AnimatePresence } from "framer-motion";
-import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
-import { getApp } from "firebase/app";
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { storage } from "../firebase/firebase.config";
 
 const Profile = () => {
   const { user, loading, updateUserProfile } = useAuth();
@@ -58,8 +58,6 @@ const Profile = () => {
 
       if (activeTab === "upload" && imageFile) {
         try {
-          const app = getApp();
-          const storage = getStorage(app);
           const fileName = `${user.uid}_${Date.now()}_${imageFile.name}`;
           const storageRef = ref(
             storage,
@@ -69,8 +67,9 @@ const Profile = () => {
           await uploadBytes(storageRef, imageFile);
           finalPhotoURL = await getDownloadURL(storageRef);
         } catch (storageError) {
-          console.error("Storage Error:", storageError);
-          toast.error(`Image upload failed: ${storageError.message}`);
+          toast.error(
+            "Image upload failed. Check your connection or file type."
+          );
           setIsUploading(false);
           return;
         }
@@ -82,7 +81,6 @@ const Profile = () => {
       toast.success("Profile updated successfully!");
       setIsEditing(false);
     } catch (error) {
-      console.error(error);
       toast.error(error.message || "Failed to update profile.");
     } finally {
       setIsUploading(false);
